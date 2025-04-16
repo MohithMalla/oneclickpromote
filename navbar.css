@@ -1,0 +1,131 @@
+/* Navbar base styles */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+  }
+  
+  /* Container */
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+  }
+  
+  /* Logo */
+  .navbar-logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #9333ea;
+    text-decoration: none;
+  }
+  
+  /* Nav links (desktop) */
+  .navbar-links {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .navbar-link {
+    color: #4b5563;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: #9333ea;
+  }
+  
+  .navbar-link.active {
+    color: #9333ea;
+    font-weight: 500;
+  }
+  
+  /* Buttons */
+  .button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .button.outline {
+    border: 1px solid #9333ea;
+    color: #9333ea;
+    background: transparent;
+  }
+  
+  .button.outline:hover {
+    background-color: #f5f3ff;
+  }
+  
+  .button.primary {
+    background-color: #9333ea;
+    color: #ffffff;
+  }
+  
+  .button.primary:hover {
+    background-color: #7e22ce;
+  }
+  
+  /* Auth buttons and welcome message */
+  .navbar-auth {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  /* Mobile Menu Button */
+  .mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #4b5563;
+    cursor: pointer;
+  }
+  
+  /* Mobile Menu */
+  .mobile-menu {
+    padding: 16px;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .mobile-link {
+    padding: 8px 16px;
+    color: #4b5563;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .mobile-link:hover {
+    color: #9333ea;
+  }
+  
+  .mobile-link.active {
+    color: #9333ea;
+    font-weight: 500;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-links,
+    .navbar-auth {
+      display: none;
+    }
+  
+    .mobile-toggle {
+      display: block;
+    }
+  }
+  
