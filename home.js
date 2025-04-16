@@ -3,10 +3,13 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import './home.css'; // CSS file
 import Navbar from './navbar';
+import CreateAd from "./createad";
+import "./createad.css";
+import ImageSlider from './imageslider';
+
 function Home() {
   return (
     <div className="home">
-                <Navbar/>
 
       {/* Hero Section */}
       <section className="hero-section">
@@ -19,7 +22,7 @@ function Home() {
             skills required.
           </p>
           <div className="cta-button">
-            <Link to="/create">
+            <Link to="/CreateAd">
               <button className="primary-button">
                 Create Your Ad <ArrowRight className="arrow-icon" />
               </button>
@@ -32,6 +35,7 @@ function Home() {
       <section className="carousel-section">
         <h2>See What You Can Create</h2>
         {/* Carousel content goes here */}
+        <ImageSlider/>
       </section>
 
       {/* About Section */}
@@ -45,7 +49,7 @@ function Home() {
             </p>
             <p>
               Simply provide your website URL, and our advanced algorithms will extract key information to create
-              multiple ad variations for you to <br></br>choose from. Select your favorite, pick a template, and your ad is<br></br>
+              multiple ad variations for you to <br></br>choose from. Select your favorite, pick a template, and your ad is
               ready to share.
             </p>
             <p>

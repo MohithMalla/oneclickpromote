@@ -78,7 +78,9 @@
 .about-text p{
     font-size: 17px;
   color: #747171;
+  padding:5.45px ;
 }
+
 .about-steps{
     flex: 1;
   min-width: 300px;

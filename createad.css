@@ -1,0 +1,133 @@
+.create-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 1rem;
+  }
+  
+  .create-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .create-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .custom-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .custom-card-content {
+    padding: 2rem;
+  }
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .sub-heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .sub-text {
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .input-wrapper {
+    position: relative;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+  }
+  
+  .custom-input {
+    width: 90%;
+    padding: 0.5rem 0.75rem 0.5rem 2.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .custom-input:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 2px #e9d5ff;
+  }
+  
+  .custom-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7c3aed;
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+  }
+  
+  .custom-button:hover {
+    background-color: #6d28d9;
+  }
+  
+  .error-text {
+    color: #dc2626;
+    font-size: 0.875rem;
+  }
+  
+  .spinner {
+    margin-right: 0.5rem;
+    animation: spin 1s linear infinite;
+  }
+  
+  .arrow-icon {
+    margin-left: 0.5rem;
+  }
+  
+  .how-it-works {
+    background-color: #f9fafb;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .how-title {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .how-list {
+    padding-left: 1.25rem;
+    color: #555;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
